@@ -1,14 +1,5 @@
 import { useState, useEffect } from "react";
-import {
-  Paper,
-  Stepper,
-  Step,
-  StepLabel,
-  Typography,
-  CircularProgress,
-  Divider,
-  Button,
-} from "@material-ui/core";
+import { Paper, Stepper, Step, StepLabel, Typography } from "@material-ui/core";
 import AddressForm from "../AddressForm";
 import PaymentForm from "../PaymentForm";
 import Confirmation from "../Confirmation";
@@ -45,7 +36,7 @@ function Checkout({ cart, onCaptureCheckout, error }) {
 
   const Form = () =>
     activeStep === 0 ? (
-      checkoutToken && <AddressForm checkoutToken={checkoutToken} next={next} />
+      <AddressForm checkoutToken={checkoutToken} next={next} />
     ) : (
       <PaymentForm
         shippingData={shippingData}
