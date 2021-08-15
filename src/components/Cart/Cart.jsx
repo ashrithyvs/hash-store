@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Typography, Button, Grid } from "@material-ui/core";
-import useStyles from "./Styles";
+import useStyles from "./cartStyles";
 import CartItem from "./CartItem/CartItem";
 import { Link } from "react-router-dom";
 function Cart({
@@ -73,9 +73,9 @@ function Cart({
   if (!cart.line_items) return "Loading....";
 
   return (
-    <Container>
+    <Container className={classes.root}>
       <div className={classes.toolbar} />
-      <Typography className={classes.title} variant="h3" gutterBottom>
+      <Typography className={classes.title} variant="h4" gutterBottom>
         Shopping Cart
       </Typography>
       {!cart.line_items.length ? <EmptyCart /> : <FilledCart />}

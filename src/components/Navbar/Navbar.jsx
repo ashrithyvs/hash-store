@@ -8,7 +8,7 @@ import {
 } from "@material-ui/core";
 import { ShoppingCart } from "@material-ui/icons";
 import logo from "../../assets/hash_store.png";
-import useStyles from "./styles";
+import useStyles from "./navbarStyles";
 import { Link, useLocation } from "react-router-dom";
 
 function Navbar({ totalItems }) {
