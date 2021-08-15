@@ -3,7 +3,7 @@ import { Paper, Stepper, Step, StepLabel, Typography } from "@material-ui/core";
 import AddressForm from "../AddressForm";
 import PaymentForm from "../PaymentForm";
 import Confirmation from "../Confirmation";
-import useStyles from "./Styles";
+import useStyles from "./checkoutStyles";
 import { commerce } from "../../../lib/commerce";
 const steps = ["Shipping Address", "Payment details"];
 

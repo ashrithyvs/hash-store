@@ -7,7 +7,7 @@ import {
   CardActions,
   CardMedia,
 } from "@material-ui/core";
-import useStyles from "./Styles";
+import useStyles from "./cardItemStyles";
 
 function CartItem({ item, onUpdateCartQty, onRemoveFromCart }) {
   const classes = useStyles();
