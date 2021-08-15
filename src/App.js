@@ -47,7 +47,7 @@ function App() {
       );
       setOrder(incomingOrder);
       refreshCart();
-    } catch (err) {
+    } catch (error) {
       setError(error.data.error.message);
     }
   };
